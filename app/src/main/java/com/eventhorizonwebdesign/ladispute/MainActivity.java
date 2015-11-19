@@ -7,8 +7,8 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Point;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
 import android.view.Display;
 import android.view.View;
@@ -91,6 +91,13 @@ public class MainActivity extends AppCompatActivity {
         });
         TextView musicRoom = (TextView)findViewById(R.id.roomMusic);
         musicRoom.setWidth((int) ((double) viewport_width * .3));
+        musicRoom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MusicMainActivity.class);
+                startActivity(intent);
+            }
+        });
         TextView lyricsRoom = (TextView)findViewById(R.id.roomLyrics);
         lyricsRoom.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,82 +111,93 @@ public class MainActivity extends AppCompatActivity {
         merchRoom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (getUserCountry(getApplicationContext())){
-                    case "UK":
-                    case "AF":
-                    case "IN":
-                    case "IL":
-                    case "JO":
-                    case "LB":
-                    case "TR":
-                    case "VN":
-                    case "AT":
-                    case "BY":
-                    case "BE":
-                    case "HR":
-                    case "CZ":
-                    case "DK":
-                    case "EE":
-                    case "FI":
-                    case "FR":
-                    case "DE":
-                    case "GR":
-                    case "HU":
-                    case "IS":
-                    case "IE":
-                    case "IT":
-                    case "LT":
-                    case "LU":
-                    case "MC":
-                    case "NL":
-                    case "NO":
-                    case "PL":
-                    case "PT":
-                    case "RO":
-                    case "RU":
-                    case "ES":
-                    case "SE":
-                    case "CH":
-                    case "UA":
-                    case "GB":
-                    case "VA":
-                    case "ME":
-                        try {
-                            Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_store_europe)));
-                            startActivity(myIntent);
-                        } catch (ActivityNotFoundException e) {
-                            Toast.makeText(getApplicationContext(), getString(R.string.toast_nobrowser),  Toast.LENGTH_LONG).show();
-                            e.printStackTrace();
-                        }
-                        break;
-                    case "AU":
-                    case "PG":
-                    case "CN":
-                    case "KJ":
-                    case "JP":
-                    case "KR":
-                    case "PH":
-                    case "SG":
-                    case "AE":
-                    case "HK":
-                        try {
-                            Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_store_asia)));
-                            startActivity(myIntent);
-                        } catch (ActivityNotFoundException e) {
-                            Toast.makeText(getApplicationContext(), getString(R.string.toast_nobrowser),  Toast.LENGTH_LONG).show();
-                            e.printStackTrace();
-                        }
-                        break;
-                    default:
-                        try {
-                            Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_store_america)));
-                            startActivity(myIntent);
-                        } catch (ActivityNotFoundException e) {
-                            Toast.makeText(getApplicationContext(), getString(R.string.toast_nobrowser),  Toast.LENGTH_LONG).show();
-                            e.printStackTrace();
-                        }
-                        break;
+                try {
+                    switch (getUserCountry(getApplicationContext())){
+                        case "UK":
+                        case "AF":
+                        case "IN":
+                        case "IL":
+                        case "JO":
+                        case "LB":
+                        case "TR":
+                        case "VN":
+                        case "AT":
+                        case "BY":
+                        case "BE":
+                        case "HR":
+                        case "CZ":
+                        case "DK":
+                        case "EE":
+                        case "FI":
+                        case "FR":
+                        case "DE":
+                        case "GR":
+                        case "HU":
+                        case "IS":
+                        case "IE":
+                        case "IT":
+                        case "LT":
+                        case "LU":
+                        case "MC":
+                        case "NL":
+                        case "NO":
+                        case "PL":
+                        case "PT":
+                        case "RO":
+                        case "RU":
+                        case "ES":
+                        case "SE":
+                        case "CH":
+                        case "UA":
+                        case "GB":
+                        case "VA":
+                        case "ME":
+                            try {
+                                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_store_europe)));
+                                startActivity(myIntent);
+                            } catch (ActivityNotFoundException e) {
+                                Toast.makeText(getApplicationContext(), getString(R.string.toast_nobrowser),  Toast.LENGTH_LONG).show();
+                                e.printStackTrace();
+                            }
+                            break;
+                        case "AU":
+                        case "PG":
+                        case "CN":
+                        case "KJ":
+                        case "JP":
+                        case "KR":
+                        case "PH":
+                        case "SG":
+                        case "AE":
+                        case "HK":
+                            try {
+                                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_store_asia)));
+                                startActivity(myIntent);
+                            } catch (ActivityNotFoundException e) {
+                                Toast.makeText(getApplicationContext(), getString(R.string.toast_nobrowser),  Toast.LENGTH_LONG).show();
+                                e.printStackTrace();
+                            }
+                            break;
+                        default:
+                            try {
+                                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_store_america)));
+                                startActivity(myIntent);
+                            } catch (ActivityNotFoundException e) {
+                                Toast.makeText(getApplicationContext(), getString(R.string.toast_nobrowser),  Toast.LENGTH_LONG).show();
+                                e.printStackTrace();
+                            }
+                            break;
+                    }
+                } catch (NullPointerException e){
+                    try {
+                        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_store_america)));
+                        startActivity(myIntent);
+                    } catch (ActivityNotFoundException e1) {
+                        Toast.makeText(getApplicationContext(), getString(R.string.toast_nobrowser),  Toast.LENGTH_LONG).show();
+                        e.printStackTrace();
+                    }
                 }
+
             }
         });
         TextView extrasRoom = (TextView)findViewById(R.id.roomExtras);
