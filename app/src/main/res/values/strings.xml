@@ -24,4 +24,5 @@
     <string name="section_songs">Song Title</string>
     <string name="section_album">Album Title</string>
     <string name="title_activity_lyric">LyricActivity</string>
+    <string name="title_activity_music_main">Music</string>
 </resources>

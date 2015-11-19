@@ -35,6 +35,11 @@
             android:label="@string/title_activity_lyric"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".MusicMain"
+            android:label="@string/title_activity_music_main"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>
