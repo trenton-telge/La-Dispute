@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="album_vancouver">Vancouver</string>
+    <string name="album_satbotrbvaa">Somewhere At The Bottom&#8230;</string>
+    <string name="album_wildlife">Wildlife</string>
+    <string name="album_rooms">Rooms Of The House</string>
+
+    <string name="song_vancouver_1">Future Wars</string>
+    <string name="song_vancouver_2">A Word Of Welcome And Of Warning</string>
+    <string name="song_vancouver_3">See You In Vancouver</string>
+    <string name="song_vancouver_4">To Withstand The Force Of Storms</string>
+    <string name="song_vancouver_5">He Is Here, He Is Not Afraid</string>
+    <string name="song_vancouver_6">The Surgeon And The Scientist</string>
+    <string name="song_vancouver_7">Fairmount</string>
+    <string name="song_vancouver_8">Untitled</string>
+    <string-array name="album_array_vancouver">
+        <item>@string/song_vancouver_1</item>
+        <item>@string/song_vancouver_2</item>
+        <item>@string/song_vancouver_3</item>
+        <item>@string/song_vancouver_4</item>
+        <item>@string/song_vancouver_5</item>
+        <item>@string/song_vancouver_6</item>
+        <item>@string/song_vancouver_7</item>
+        <item>@string/song_vancouver_8</item>
+    </string-array>
+
+    <string name="song_satbotrbvaa_1">Such Small Hands</string>
+    <string name="song_satbotrbvaa_2">Said The King To The River</string>
+    <string name="song_satbotrbvaa_3">New Storms For Older Lovers</string>
+    <string name="song_satbotrbvaa_4">Damaged Goods</string>
+    <string name="song_satbotrbvaa_5">Fall Down, Never Get Back Up Again</string>
+    <string name="song_satbotrbvaa_6">Bury Your Flame</string>
+    <string name="song_satbotrbvaa_7">Last Blues For Bloody Knuckles</string>
+    <string name="song_satbotrbvaa_8">The Castle Builders</string>
+    <string name="song_satbotrbvaa_9">Andria</string>
+    <string name="song_satbotrbvaa_10">Then Again, Maybe You Were Right</string>
+    <string name="song_satbotrbvaa_11">Sad Prayers For Guilty Bodies</string>
+    <string name="song_satbotrbvaa_12">The Last Lost Continent</string>
+    <string name="song_satbotrbvaa_13">Nobody, Not Even The Rain</string>
+    <string-array name="album_array_satbotrbvaa">
+        <item>@string/song_satbotrbvaa_1</item>
+        <item>@string/song_satbotrbvaa_2</item>
+        <item>@string/song_satbotrbvaa_3</item>
+        <item>@string/song_satbotrbvaa_4</item>
+        <item>@string/song_satbotrbvaa_5</item>
+        <item>@string/song_satbotrbvaa_6</item>
+        <item>@string/song_satbotrbvaa_7</item>
+        <item>@string/song_satbotrbvaa_8</item>
+        <item>@string/song_satbotrbvaa_9</item>
+        <item>@string/song_satbotrbvaa_10</item>
+        <item>@string/song_satbotrbvaa_11</item>
+        <item>@string/song_satbotrbvaa_12</item>
+        <item>@string/song_satbotrbvaa_13</item>
+    </string-array>
+
+    <string name="song_wildlife_1">a Departure</string>
+    <string name="song_wildlife_2">Harder Harmonies</string>
+    <string name="song_wildlife_3">St. Paul Missionary Baptist Church Blues</string>
+    <string name="song_wildlife_4">Edit Your Hometown</string>
+    <string name="song_wildlife_5">a Letter</string>
+    <string name="song_wildlife_6">Safer In The Forest - \nLove Song For Poor Michigan</string><!--Take note of the return character here-->
+    <string name="song_wildlife_7">The Most Beautiful Bitter Fruit</string>
+    <string name="song_wildlife_8">a Poem</string>
+    <string name="song_wildlife_9">King Park</string>
+    <string name="song_wildlife_10">Edward Benz, 27 Times</string>
+    <string name="song_wildlife_11">I See Everything</string>
+    <string name="song_wildlife_12">a Broken Jar</string>
+    <string name="song_wildlife_13">all our bruised bodies and the whole heart shrinks</string>
+    <string name="song_wildlife_14">You and I in Unison</string>
+    <string-array name="album_array_wildlife">
+        <item>@string/song_wildlife_1</item>
+        <item>@string/song_wildlife_2</item>
+        <item>@string/song_wildlife_3</item>
+        <item>@string/song_wildlife_4</item>
+        <item>@string/song_wildlife_5</item>
+        <item>@string/song_wildlife_6</item>
+        <item>@string/song_wildlife_7</item>
+        <item>@string/song_wildlife_8</item>
+        <item>@string/song_wildlife_9</item>
+        <item>@string/song_wildlife_10</item>
+        <item>@string/song_wildlife_11</item>
+        <item>@string/song_wildlife_12</item>
+        <item>@string/song_wildlife_13</item>
+        <item>@string/song_wildlife_14</item>
+    </string-array>
+
+    <string name="song_rooms_1">Hudsonville Mi 1956</string>
+    <string name="song_rooms_2">First Reactions After Falling Through The Ice</string>
+    <string name="song_rooms_3">Woman (In Mirror)</string>
+    <string name="song_rooms_4">Scenes From Highways 1981/2009</string>
+    <string name="song_rooms_5">For Mayor In Splitsville</string>
+    <string name="song_rooms_6">35</string>
+    <string name="song_rooms_7">Stay Happy There</string>
+    <string name="song_rooms_8">The Child We Lost 1963</string>
+    <string name="song_rooms_9">Woman (Reading)</string>
+    <string name="song_rooms_10">Extraordinary Dinner Party</string>
+    <string name="song_rooms_11">Objects In Space</string>
+    <string-array name="album_array_rooms">
+        <item>@string/song_rooms_1</item>
+        <item>@string/song_rooms_2</item>
+        <item>@string/song_rooms_3</item>
+        <item>@string/song_rooms_4</item>
+        <item>@string/song_rooms_5</item>
+        <item>@string/song_rooms_6</item>
+        <item>@string/song_rooms_7</item>
+        <item>@string/song_rooms_8</item>
+        <item>@string/song_rooms_9</item>
+        <item>@string/song_rooms_10</item>
+        <item>@string/song_rooms_11</item>
+    </string-array>
+
+</resources>

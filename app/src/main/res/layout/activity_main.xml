@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/footerImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/blank" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/socialContainer"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_horizontal"
+        android:background="#00000000">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/socialLaDispute"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/social_ladispute"
+            android:contentDescription="@string/desc_social_ladispute"
+            android:clickable="true"
+            android:focusable="false"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/socialSubreddit"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/socialLaDispute"
+            android:layout_toEndOf="@+id/socialLaDispute"
+            android:src="@drawable/social_reddit"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:contentDescription="@string/desc_social_reddit"
+            android:clickable="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/socialFacebook"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/socialLaDispute"
+            android:layout_toStartOf="@+id/socialLaDispute"
+            android:src="@drawable/social_facebook"
+            android:contentDescription="@string/desc_social_facebook"
+            android:clickable="true"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:layout_below="@+id/socialContainer"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rooms"
+        android:background="@drawable/rooms_of_the_house_bg"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/room_tour"
+            android:id="@+id/roomTour"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/rooms_of_the_house_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/room_music"
+            android:id="@+id/roomMusic"
+            android:layout_below="@+id/roomTour"
+            android:minWidth="100dp"
+            android:maxWidth="140dp"
+            android:width="120dp"
+            android:background="@drawable/rooms_of_the_house_bg"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="12pt"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/room_lyrics"
+            android:id="@+id/roomLyrics"
+            android:layout_alignTop="@+id/roomMusic"
+            android:layout_toRightOf="@+id/roomMusic"
+            android:layout_alignRight="@+id/roomTour"
+            android:layout_alignEnd="@+id/roomTour"
+            android:background="@drawable/rooms_of_the_house_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="12pt"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/room_store"
+            android:id="@+id/roomStore"
+            android:layout_below="@+id/roomLyrics"
+            android:layout_alignRight="@+id/roomLyrics"
+            android:layout_alignEnd="@+id/roomLyrics"
+            android:minWidth="140dp"
+            android:maxWidth="180dp"
+            android:width="160dp"
+            android:background="@drawable/rooms_of_the_house_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/room_extras"
+            android:id="@+id/roomExtras"
+            android:layout_alignTop="@+id/roomStore"
+            android:layout_toLeftOf="@+id/roomStore"
+            android:layout_alignLeft="@+id/roomMusic"
+            android:layout_alignStart="@+id/roomMusic"
+            android:layout_alignBottom="@+id/roomStore"
+            android:gravity="center"
+            android:background="@drawable/rooms_of_the_house_bg"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="12pt"
+            android:clickable="true" />
+    </RelativeLayout>
+</RelativeLayout>

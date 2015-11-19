@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">La Dispute</string>
+    <string name="desc_social_ladispute">Website</string>
+    <string name="desc_social_reddit">Subreddit</string>
+    <string name="desc_social_facebook">Facebook</string>
+    <string name="room_tour">Tour</string>
+    <string name="room_music">Music</string>
+    <string name="room_lyrics">Lyrics</string>
+    <string name="room_store">Merch</string>
+    <string name="room_extras">Fan Extras</string>
+    <string name="toast_nobrowser">I couldn\'t find a web browser installed.</string>
+    <string name="toast_noweb">No Internet Access.</string>
+    <string name="url_officialsite">http://www.ladisputemusic.com/home/</string>
+    <string name="url_reddit">https://www.reddit.com/r/ladispute</string>
+    <string name="url_facebook">https://www.facebook.com/LaDisputeMusic/</string>
+    <string name="url_tourinfo">http://www.eventhorizonwebdesign.com/testing/ladispute/tour.html</string>
+    <string name="url_store_europe">http://ladispute.awesomedistro.com/</string>
+    <string name="url_store_asia">http://shop.resistrecords.com/collections/la-dispute</string>
+    <string name="url_store_america">http://hellomerch.com/collections/la-dispute</string>
+    <string name="blank"> </string>
+    <string name="title_activity_tour">Tour Dates</string>
+    <string name="title_activity_lyric_sorter">Lyrics</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_songs">Song Title</string>
+    <string name="section_album">Album Title</string>
+    <string name="title_activity_lyric">LyricActivity</string>
+</resources>
