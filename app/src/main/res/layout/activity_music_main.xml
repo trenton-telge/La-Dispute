@@ -52,7 +52,11 @@
             android:id="@+id/vancouverAlbum"
             android:background="@drawable/rooms_of_the_house_bg"
             android:padding="4dp"
-            android:contentDescription="@string/album_vancouver" />
+            android:contentDescription="@string/album_vancouver"
+            android:layout_toLeftOf="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -60,32 +64,46 @@
             android:id="@+id/satbotrbvaaAlbum"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
             android:contentDescription="@string/album_satbotrbvaa"
             android:background="@drawable/rooms_of_the_house_bg"
-            android:padding="4dp" />
+            android:padding="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/wildlifeAlbum"
-            android:layout_below="@+id/vancouverAlbum"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:padding="4dp"
             android:background="@drawable/rooms_of_the_house_bg"
-            android:contentDescription="@string/album_wildlife" />
+            android:contentDescription="@string/album_wildlife"
+            android:layout_below="@+id/vancouverAlbum"
+            android:layout_toLeftOf="@+id/satbotrbvaaAlbum"
+            android:layout_toStartOf="@+id/satbotrbvaaAlbum" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/roomsAlbum"
-            android:layout_below="@+id/satbotrbvaaAlbum"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:padding="4dp"
             android:background="@drawable/rooms_of_the_house_bg"
-            android:contentDescription="@string/album_rooms" />
+            android:contentDescription="@string/album_rooms"
+            android:layout_alignTop="@+id/wildlifeAlbum"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/wildlifeAlbum" />
     </RelativeLayout>
 
 </RelativeLayout>
