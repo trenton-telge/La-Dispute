@@ -1,11 +1,12 @@
-package com.eventhorizonwebdesign.ladispute;
+package com.eventhorizonwebdesign.ladispute.chartlyrics;
 
 /**
  * Created by Trenton on 11/16/2015.
+ *
+ * Request object for ChartLyrics SOAP API
  */
 
 
-import pt.joaocruz04.lib.annotations.JSoapAttribute;
 import pt.joaocruz04.lib.annotations.JSoapClass;
 import pt.joaocruz04.lib.annotations.JSoapReqField;
 import pt.joaocruz04.lib.misc.SOAPSerializable;

@@ -30,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
         context = getApplicationContext();
         setContentView(R.layout.activity_main);
 
+        //Try and get the zip code from the last GPS location
+        new InitZipFetcher().execute();
+
         //Display footer image
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();

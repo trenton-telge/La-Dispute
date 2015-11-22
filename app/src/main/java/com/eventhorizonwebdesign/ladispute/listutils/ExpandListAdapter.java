@@ -1,9 +1,10 @@
-package com.eventhorizonwebdesign.ladispute;
+package com.eventhorizonwebdesign.ladispute.listutils;
 
 /**
  * Created by Trenton on 11/13/2015.
+ *
+ * Expandable list adapter for lyrics list
  */
-import java.util.ArrayList;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,6 +12,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
+
+import com.eventhorizonwebdesign.ladispute.R;
+
+import java.util.ArrayList;
 
 public class ExpandListAdapter extends BaseExpandableListAdapter {
 
@@ -49,7 +54,7 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
             view = infalInflater.inflate(R.layout.expandlist_child_item, null);
         }
         TextView tv = (TextView) view.findViewById(R.id.tvChild);
-        tv.setText(child.getName().toString());
+        tv.setText(child.getName());
         tv.setTag(child.getTag());
         // TODO Auto-generated method stub
         return view;

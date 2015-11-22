@@ -1,13 +1,12 @@
 package com.eventhorizonwebdesign.ladispute;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.widget.TextView;
+
+import com.eventhorizonwebdesign.ladispute.chartlyrics.SearchLyricDirect;
+import com.eventhorizonwebdesign.ladispute.chartlyrics.SearchLyricDirectResult;
 
 import pt.joaocruz04.lib.SOAPManager;
 import pt.joaocruz04.lib.misc.JSoapCallback;

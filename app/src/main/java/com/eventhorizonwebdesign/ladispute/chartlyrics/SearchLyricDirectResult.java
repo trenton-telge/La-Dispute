@@ -1,4 +1,4 @@
-package com.eventhorizonwebdesign.ladispute;
+package com.eventhorizonwebdesign.ladispute.chartlyrics;
 
 import pt.joaocruz04.lib.annotations.JSoapClass;
 import pt.joaocruz04.lib.annotations.JSoapResField;
@@ -6,6 +6,8 @@ import pt.joaocruz04.lib.misc.SOAPDeserializable;
 
 /**
  * Created by Trenton on 11/16/2015.
+ *
+ * Result object for ChartLyrics SOAP API
  */
 public class SearchLyricDirectResult extends SOAPDeserializable {
 

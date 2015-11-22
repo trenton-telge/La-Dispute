@@ -1,7 +1,9 @@
-package com.eventhorizonwebdesign.ladispute;
+package com.eventhorizonwebdesign.ladispute.listutils;
 
 /**
  * Created by Trenton on 11/13/2015.
+ *
+ * Child object for expandable list
  */
 public class ExpandListChild {
 

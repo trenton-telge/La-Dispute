@@ -1,4 +1,4 @@
-package com.eventhorizonwebdesign.ladispute;
+package com.eventhorizonwebdesign.ladispute.listutils;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,10 +7,14 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.eventhorizonwebdesign.ladispute.R;
+
 import java.util.List;
 
 /**
  * Created by Trenton on 11/13/2015.
+ *
+ *  Alphabetical list adapter for lyrics list
  */
 public class LyricListAdapter extends ArrayAdapter<String> {
     private List<String> l;
