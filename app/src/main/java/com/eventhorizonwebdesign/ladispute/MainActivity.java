@@ -21,10 +21,13 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
 
     protected static String songTitle = "";
+    protected static String lastZip = "";
+    protected static Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        context = getApplicationContext();
         setContentView(R.layout.activity_main);
 
         //Display footer image
@@ -222,5 +225,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return null;
     }
+
 
 }
