@@ -67,14 +67,27 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tracklisting"
+                android:id="@+id/albumTitle"
                 android:layout_below="@+id/albumCover"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="12pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tracklisting"
+                android:textColor="@color/white"
+                android:textSize="8pt"
+                android:layout_below="@+id/albumTitle"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:textColor="@color/white"
-                android:textSize="8pt" />
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
         </RelativeLayout>
     </ScrollView>
 

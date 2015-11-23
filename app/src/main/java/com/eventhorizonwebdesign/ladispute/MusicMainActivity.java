@@ -4,10 +4,12 @@ import android.app.SearchManager;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Point;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Display;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ImageButton;
@@ -98,9 +100,14 @@ public class MusicMainActivity extends AppCompatActivity {
             }
         });
         ImageButton playButton = (ImageButton)findViewById(R.id.playButton);
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        int viewport_width = size.x;
+        int width = (int)((double)viewport_width*.3);
         Bitmap playBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.playthisselection);
         double ratio = (double)playBitmap.getHeight()/(double)playBitmap.getWidth();
-        Bitmap resizedPlayBitmap = Bitmap.createScaledBitmap(playBitmap, (int)200, (int)(200*ratio), true);
+        Bitmap resizedPlayBitmap = Bitmap.createScaledBitmap(playBitmap, width, (int)(ratio*(double)width), true);
         playButton.setImageBitmap(resizedPlayBitmap);
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override

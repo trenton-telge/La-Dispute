@@ -23,6 +23,7 @@ public class MusicAlbumActivity extends AppCompatActivity {
 
         Bitmap coverBitmap = null;
         String tracksText = "";
+        String albumTitle = "";
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
@@ -31,18 +32,22 @@ public class MusicAlbumActivity extends AppCompatActivity {
                     case "Vancouver":
                         coverBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.vancouver);
                         tracksText = getString(R.string.tracklisting_vancouver);
+                        albumTitle = getString(R.string.album_vancouver);
                         break;
                     case "Somewhere At The Bottom":
                         coverBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.satbotrbvaa);
                         tracksText = getString(R.string.tracklisting_satbotrbvaa);
+                        albumTitle = getString(R.string.album_satbotrbvaa_full);
                         break;
                     case "Wildlife":
                         coverBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.wildlife);
                         tracksText = getString(R.string.tracklisting_wildlife);
+                        albumTitle = getString(R.string.album_wildlife);
                         break;
                     case "Rooms Of The House":
                         coverBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.rooms);
                         tracksText = getString(R.string.tracklisting_rooms);
+                        albumTitle = getString(R.string.album_rooms);
                         break;
                     default:
                         return;
@@ -60,6 +65,9 @@ public class MusicAlbumActivity extends AppCompatActivity {
         ImageView albumCover = (ImageView)findViewById(R.id.albumCover);
         Bitmap resizedCoverBitmap = Bitmap.createScaledBitmap(coverBitmap, dim, dim, true);
         albumCover.setImageBitmap(resizedCoverBitmap);
+
+        TextView albumTitleView = (TextView)findViewById(R.id.albumTitle);
+        albumTitleView.setText(albumTitle);
 
         TextView tracklist = (TextView)findViewById(R.id.tracklisting);
         tracklist.setText(tracksText);
