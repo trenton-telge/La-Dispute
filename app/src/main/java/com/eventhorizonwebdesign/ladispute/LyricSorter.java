@@ -268,7 +268,7 @@ public class LyricSorter extends AppCompatActivity {
                         @Override
                         public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
                             Intent intent = new Intent(rootView.getContext(), LyricActivity.class);
-                            intent.putExtra("SONG_TITLE", ExpAdapter.getChild(groupPosition, childPosition).toString());
+                            intent.putExtra("SONG_TITLE", ExpAdapter.getChildTitle(groupPosition, childPosition));
                             startActivity(intent);
                             return false;
                         }

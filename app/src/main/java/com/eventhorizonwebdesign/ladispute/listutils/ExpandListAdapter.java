@@ -41,6 +41,12 @@ public class ExpandListAdapter extends BaseExpandableListAdapter {
         return chList.get(childPosition);
     }
 
+    public String getChildTitle(int groupPosition, int childPosition) {
+        // TODO Auto-generated method stub
+        ArrayList<ExpandListChild> chList = groups.get(groupPosition).getItems();
+        return chList.get(childPosition).getName();
+    }
+
     public long getChildId(int groupPosition, int childPosition) {
         // TODO Auto-generated method stub
         return childPosition;
