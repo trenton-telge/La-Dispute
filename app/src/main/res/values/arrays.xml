@@ -25,14 +25,7 @@
         <item>@string/song_vancouver_8</item>
     </string-array>
     <string name="tracklisting_vancouver">
-        1. Future Wars\n
-        2. A Word Of Welcome And Of Warning\n
-        3. See You In Vancouver\n
-        4. To Withstand The Force Of Storms\n
-        5. He Is Here, He Is Not Afraid\n
-        6. The Surgeon And The Scientist\n
-        7. Fairmount\n
-        8. Untitled
+        1. Future Wars\n2. A Word Of Welcome And Of Warning\n3. See You In Vancouver\n4. To Withstand The Force Of Storms\n5. He Is Here, He Is Not Afraid\n6. The Surgeon And The Scientist\n7. Fairmount\n8. Untitled
     </string>
 
     <string name="song_satbotrbvaa_1">Such Small Hands</string>
@@ -64,19 +57,7 @@
         <item>@string/song_satbotrbvaa_13</item>
     </string-array>
     <string name="tracklisting_satbotrbvaa">
-        1. Such Small Hands\n
-        2. Said The King To The River\n
-        3. New Storms For Older Lovers\n
-        4. Damaged Goods\n
-        5. Fall Down, Never Get Back Up Again\n
-        6. Bury Your Flame\n
-        7. Last Blues For Bloody Knuckles\n
-        8. The Castle Builders\n
-        9. Andria\n
-        10. Then Again, Maybe You Were Right\n
-        11. Sad Prayers For Guilty Bodies\n
-        12. The Last Lost Continent\n
-        13. Nobody, Not Even The Rain
+        1. Such Small Hands\n2. Said The King To The River\n3. New Storms For Older Lovers\n4. Damaged Goods\n5. Fall Down, Never Get Back Up Again\n6. Bury Your Flame\n7. Last Blues For Bloody Knuckles\n8. The Castle Builders\n9. Andria\n10. Then Again, Maybe You Were Right\n11. Sad Prayers For Guilty Bodies\n12. The Last Lost Continent\n13. Nobody, Not Even The Rain
     </string>
 
     <string name="song_wildlife_1">a Departure</string>
@@ -110,20 +91,7 @@
         <item>@string/song_wildlife_14</item>
     </string-array>
     <string name="tracklisting_wildlife">
-        1. a Departure\n
-        2. Harder Harmonies\n
-        3. St. Paul Missionary Baptist Church Blues\n
-        4. Edit Your Hometown\n
-        5. a Letter\n
-        6. Safer In The Forest - Love Song For Poor Michigan\n
-        7. The Most Beautiful Bitter Fruit\n
-        8. a Poem\n
-        9. King Park\n
-        10. Edward Benz, 27 Times\n
-        11. I See Everything\n
-        12. a Broken Jar\n
-        13. all our bruised bodies and the whole heart shrinks\n
-        14. You and I in Unison
+        1. a Departure\n2. Harder Harmonies\n3. St. Paul Missionary Baptist Church Blues\n4. Edit Your Hometown\n5. a Letter\n6. Safer In The Forest - Love Song For Poor Michigan\n7. The Most Beautiful Bitter Fruit\n8. a Poem\n9. King Park\n10. Edward Benz, 27 Times\n11. I See Everything\n12. a Broken Jar\n13. all our bruised bodies and the whole heart shrinks\n14. You and I in Unison
     </string>
 
     <string name="song_rooms_1">Hudsonville Mi 1956</string>
@@ -151,17 +119,7 @@
         <item>@string/song_rooms_11</item>
     </string-array>
     <string name="tracklisting_rooms">
-        1. Hudsonville Mi 1956\n
-        2. First Reactions After Falling Through The Ice\n
-        3. WOman (In Mirror)\n
-        4. Scenes From Highways 1981/2009\n
-        5. For Mayor In Splitsville\n
-        6. 35\n
-        7. Stay Happy There\n
-        8. The Child We Lost 1963\n
-        9. Woman (Reading)\n
-        10. Extraordinary Dinner Party\n
-        11. Objects In Space
+        1. Hudsonville Mi 1956\n2. First Reactions After Falling Through The Ice\n3. WOman (In Mirror)\n4. Scenes From Highways 1981/2009\n5. For Mayor In Splitsville\n6. 35\n7. Stay Happy There\n8. The Child We Lost 1963\n9. Woman (Reading)\n10. Extraordinary Dinner Party\n11. Objects In Space
     </string>
 
 </resources>
