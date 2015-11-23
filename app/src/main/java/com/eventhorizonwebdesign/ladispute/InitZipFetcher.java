@@ -34,6 +34,7 @@ public class InitZipFetcher extends AsyncTask<Void, Integer, Integer> {
             //TODO error for IOException
             return 1;
         } catch (NullPointerException e){
+            //TODO delay and retry
             return 1;
         }
         return 0;

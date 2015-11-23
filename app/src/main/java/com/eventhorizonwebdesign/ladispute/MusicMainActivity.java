@@ -35,16 +35,9 @@ public class MusicMainActivity extends AppCompatActivity {
         vancouverAlbum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String artist = getString(R.string.app_name);
-                String album = getString(R.string.album_vancouver);
-                Intent intent = new Intent(MediaStore.INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH);
-                intent.putExtra(MediaStore.EXTRA_MEDIA_FOCUS, MediaStore.Audio.Artists.ENTRY_CONTENT_TYPE);
-                intent.putExtra(MediaStore.EXTRA_MEDIA_ALBUM, album);
-                intent.putExtra(MediaStore.EXTRA_MEDIA_ARTIST, artist);
-                intent.putExtra(SearchManager.QUERY, artist);
-                if (intent.resolveActivity(getPackageManager()) != null) {
-                        startActivity(intent);
-                }
+                Intent intent = new Intent(getBaseContext(), MusicAlbumActivity.class);
+                intent.putExtra("EXTRA_ALBUM_NAME", "Vancouver");
+                startActivity(intent);
             }
         });
         final ImageButton satbotrbvaaAlbum = (ImageButton)findViewById(R.id.satbotrbvaaAlbum);
@@ -58,6 +51,14 @@ public class MusicMainActivity extends AppCompatActivity {
                 satbotrbvaaAlbum.setImageBitmap(resizedAlbumBitmap);
             }
         });
+        satbotrbvaaAlbum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), MusicAlbumActivity.class);
+                intent.putExtra("EXTRA_ALBUM_NAME", "Somewhere At The Bottom");
+                startActivity(intent);
+            }
+        });
         final ImageButton wildlifeAlbum = (ImageButton)findViewById(R.id.wildlifeAlbum);
         observer = wildlifeAlbum.getViewTreeObserver();
         observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
@@ -67,6 +68,14 @@ public class MusicMainActivity extends AppCompatActivity {
                 Bitmap albumBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.wildlife);
                 Bitmap resizedAlbumBitmap = Bitmap.createScaledBitmap(albumBitmap, albumdim, albumdim, true);
                 wildlifeAlbum.setImageBitmap(resizedAlbumBitmap);
+            }
+        });
+        wildlifeAlbum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), MusicAlbumActivity.class);
+                intent.putExtra("EXTRA_ALBUM_NAME", "Wildlife");
+                startActivity(intent);
             }
         });
         final ImageButton roomsAlbum = (ImageButton)findViewById(R.id.roomsAlbum);
@@ -80,12 +89,32 @@ public class MusicMainActivity extends AppCompatActivity {
                 roomsAlbum.setImageBitmap(resizedAlbumBitmap);
             }
         });
-
+        roomsAlbum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), MusicAlbumActivity.class);
+                intent.putExtra("EXTRA_ALBUM_NAME", "Rooms Of The House");
+                startActivity(intent);
+            }
+        });
         ImageButton playButton = (ImageButton)findViewById(R.id.playButton);
         Bitmap playBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.playthisselection);
         double ratio = (double)playBitmap.getHeight()/(double)playBitmap.getWidth();
         Bitmap resizedPlayBitmap = Bitmap.createScaledBitmap(playBitmap, (int)200, (int)(200*ratio), true);
         playButton.setImageBitmap(resizedPlayBitmap);
+        playButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String artist = getString(R.string.app_name);
+                Intent intent = new Intent(MediaStore.INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH);
+                intent.putExtra(MediaStore.EXTRA_MEDIA_FOCUS, MediaStore.Audio.Artists.ENTRY_CONTENT_TYPE);
+                intent.putExtra(MediaStore.EXTRA_MEDIA_ARTIST, artist);
+                intent.putExtra(SearchManager.QUERY, artist);
+                if (intent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(intent);
+                }
+            }
+        });
     }
 
 }
