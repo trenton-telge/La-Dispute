@@ -28,7 +28,9 @@ public class MusicAlbumActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             try {
-                switch (extras.getString("EXTRA_ALBUM_NAME")) {
+                String album = extras.getString("EXTRA_ALBUM_NAME");
+                if (album == null){album = "";}
+                switch (album) {
                     case "Vancouver":
                         coverBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.vancouver);
                         tracksText = getString(R.string.tracklisting_vancouver);

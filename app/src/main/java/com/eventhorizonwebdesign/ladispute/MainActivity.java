@@ -86,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //TODO make the "rooms" each point to their own activities or intents
         TextView tourRoom = (TextView)findViewById(R.id.roomTour);
         tourRoom.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -207,6 +206,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         TextView extrasRoom = (TextView)findViewById(R.id.roomExtras);
+        //TODO Make ExtrasActivity
 
     }
     public static String getUserCountry(Context context) {
@@ -224,9 +224,9 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         catch (Exception e) {
-            return null;
+            return "";
         }
-        return null;
+        return "";
     }
 
 
