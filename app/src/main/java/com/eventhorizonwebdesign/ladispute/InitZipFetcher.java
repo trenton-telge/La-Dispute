@@ -29,8 +29,12 @@ public class InitZipFetcher extends AsyncTask<Void, Integer, Integer> {
             MainActivity.lastZip = addresses.get(0).getPostalCode();
         } catch (SecurityException e){
             //TODO error for no GPS permissions
+            return 1;
         } catch (IOException e){
             //TODO error for IOException
+            return 1;
+        } catch (NullPointerException e){
+            return 1;
         }
         return 0;
     }

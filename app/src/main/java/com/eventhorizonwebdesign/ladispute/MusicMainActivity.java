@@ -1,10 +1,14 @@
 package com.eventhorizonwebdesign.ladispute;
 
+import android.app.SearchManager;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ImageButton;
 
@@ -26,6 +30,21 @@ public class MusicMainActivity extends AppCompatActivity {
                 Bitmap albumBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.vancouver);
                 Bitmap resizedAlbumBitmap = Bitmap.createScaledBitmap(albumBitmap, albumdim, albumdim, true);
                 vancouverAlbum.setImageBitmap(resizedAlbumBitmap);
+            }
+        });
+        vancouverAlbum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String artist = getString(R.string.app_name);
+                String album = getString(R.string.album_vancouver);
+                Intent intent = new Intent(MediaStore.INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH);
+                intent.putExtra(MediaStore.EXTRA_MEDIA_FOCUS, MediaStore.Audio.Artists.ENTRY_CONTENT_TYPE);
+                intent.putExtra(MediaStore.EXTRA_MEDIA_ALBUM, album);
+                intent.putExtra(MediaStore.EXTRA_MEDIA_ARTIST, artist);
+                intent.putExtra(SearchManager.QUERY, artist);
+                if (intent.resolveActivity(getPackageManager()) != null) {
+                        startActivity(intent);
+                }
             }
         });
         final ImageButton satbotrbvaaAlbum = (ImageButton)findViewById(R.id.satbotrbvaaAlbum);
@@ -61,6 +80,12 @@ public class MusicMainActivity extends AppCompatActivity {
                 roomsAlbum.setImageBitmap(resizedAlbumBitmap);
             }
         });
+
+        ImageButton playButton = (ImageButton)findViewById(R.id.playButton);
+        Bitmap playBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.playthisselection);
+        double ratio = (double)playBitmap.getHeight()/(double)playBitmap.getWidth();
+        Bitmap resizedPlayBitmap = Bitmap.createScaledBitmap(playBitmap, (int)200, (int)(200*ratio), true);
+        playButton.setImageBitmap(resizedPlayBitmap);
     }
 
 }
