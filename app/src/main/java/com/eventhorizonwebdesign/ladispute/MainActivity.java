@@ -20,7 +20,6 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    protected static String songTitle = "";
     protected static String lastZip = "";
     protected static Context context;
 

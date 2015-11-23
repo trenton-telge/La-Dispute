@@ -71,8 +71,8 @@ public class LyricSorter extends AppCompatActivity {
     }
 
     public static ArrayList<ExpandListGroup> SetStandardGroups(Context c) {
-        ArrayList<ExpandListGroup> list = new ArrayList<ExpandListGroup>();
-        ArrayList<ExpandListChild> list2 = new ArrayList<ExpandListChild>();
+        ArrayList<ExpandListGroup> list = new ArrayList<>();
+        ArrayList<ExpandListChild> list2 = new ArrayList<>();
         ExpandListGroup gru1 = new ExpandListGroup();
         gru1.setName(c.getString(R.string.album_vancouver));
         String[] tempArray = c.getResources().getStringArray(R.array.album_array_vancouver);
@@ -89,7 +89,7 @@ public class LyricSorter extends AppCompatActivity {
         list.add(gru1);
 
 
-        list2 = new ArrayList<ExpandListChild>();
+        list2 = new ArrayList<>();
         ExpandListGroup gru2 = new ExpandListGroup();
         gru2.setName(c.getString(R.string.album_satbotrbvaa));
         tempArray = c.getResources().getStringArray(R.array.album_array_satbotrbvaa);
@@ -105,7 +105,7 @@ public class LyricSorter extends AppCompatActivity {
         gru2.setItems(list2);
         list.add(gru2);
 
-        list2 = new ArrayList<ExpandListChild>();
+        list2 = new ArrayList<>();
         ExpandListGroup gru3 = new ExpandListGroup();
         gru3.setName(c.getString(R.string.album_wildlife));
         tempArray = c.getResources().getStringArray(R.array.album_array_wildlife);
@@ -121,7 +121,7 @@ public class LyricSorter extends AppCompatActivity {
         gru3.setItems(list2);
         list.add(gru3);
 
-        list2 = new ArrayList<ExpandListChild>();
+        list2 = new ArrayList<>();
         ExpandListGroup gru4 = new ExpandListGroup();
         gru4.setName(c.getString(R.string.album_rooms));
         tempArray = c.getResources().getStringArray(R.array.album_array_rooms);
@@ -250,8 +250,8 @@ public class LyricSorter extends AppCompatActivity {
                     lyricsList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                            MainActivity.songTitle = customAdapter.getItem(position);
                             Intent intent = new Intent(rootView.getContext(), LyricActivity.class);
+                            intent.putExtra("SONG_TITLE", customAdapter.getItem(position));
                             startActivity(intent);
                         }
                     });
@@ -267,8 +267,8 @@ public class LyricSorter extends AppCompatActivity {
                     ExpandList.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
                         @Override
                         public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
-                            MainActivity.songTitle = ExpAdapter.getChild(groupPosition, childPosition).toString();
                             Intent intent = new Intent(rootView.getContext(), LyricActivity.class);
+                            intent.putExtra("SONG_TITLE", ExpAdapter.getChild(groupPosition, childPosition).toString());
                             startActivity(intent);
                             return false;
                         }
