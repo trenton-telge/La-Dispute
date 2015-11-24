@@ -37,6 +37,22 @@ public class LyricActivity extends AppCompatActivity {
         else if (songTitle.equals(getString(R.string.song_satbotrbvaa_11))){lyricsView.setText(R.string.lyrics_satbotrbvaa_11);}
         else if (songTitle.equals(getString(R.string.song_satbotrbvaa_12))){lyricsView.setText(R.string.lyrics_satbotrbvaa_12);}
         else if (songTitle.equals(getString(R.string.song_satbotrbvaa_13))){lyricsView.setText(R.string.lyrics_satbotrbvaa_13);}
+
+        else if (songTitle.equals(getString(R.string.song_wildlife_1))){lyricsView.setText(R.string.lyrics_wildlife_1);}
+        else if (songTitle.equals(getString(R.string.song_wildlife_2))){lyricsView.setText(R.string.lyrics_wildlife_2);}
+        else if (songTitle.equals(getString(R.string.song_wildlife_3))){lyricsView.setText(R.string.lyrics_wildlife_3);}
+        else if (songTitle.equals(getString(R.string.song_wildlife_4))){lyricsView.setText(R.string.lyrics_wildlife_4);}
+        else if (songTitle.equals(getString(R.string.song_wildlife_5))){lyricsView.setText(R.string.lyrics_wildlife_5);}
+        else if (songTitle.equals(getString(R.string.song_wildlife_6))){lyricsView.setText(R.string.lyrics_wildlife_6);}
+        else if (songTitle.equals(getString(R.string.song_wildlife_7))){lyricsView.setText(R.string.lyrics_wildlife_7);}
+        else if (songTitle.equals(getString(R.string.song_wildlife_8))){lyricsView.setText(R.string.lyrics_wildlife_8);}
+        else if (songTitle.equals(getString(R.string.song_wildlife_9))){lyricsView.setText(R.string.lyrics_wildlife_9);}
+        else if (songTitle.equals(getString(R.string.song_wildlife_10))){lyricsView.setText(R.string.lyrics_wildlife_10);}
+        else if (songTitle.equals(getString(R.string.song_wildlife_11))){lyricsView.setText(R.string.lyrics_wildlife_11);}
+        else if (songTitle.equals(getString(R.string.song_wildlife_12))){lyricsView.setText(R.string.lyrics_wildlife_12);}
+        else if (songTitle.equals(getString(R.string.song_wildlife_13))){lyricsView.setText(R.string.lyrics_wildlife_13);}
+        else if (songTitle.equals(getString(R.string.song_wildlife_14))){lyricsView.setText(R.string.lyrics_wildlife_14);}
+
     }
 
 
