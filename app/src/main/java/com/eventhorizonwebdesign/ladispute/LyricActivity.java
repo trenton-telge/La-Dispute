@@ -53,6 +53,17 @@ public class LyricActivity extends AppCompatActivity {
         else if (songTitle.equals(getString(R.string.song_wildlife_13))){lyricsView.setText(R.string.lyrics_wildlife_13);}
         else if (songTitle.equals(getString(R.string.song_wildlife_14))){lyricsView.setText(R.string.lyrics_wildlife_14);}
 
+        else if (songTitle.equals(getString(R.string.song_rooms_1))){lyricsView.setText(R.string.lyrics_rooms_1);}
+        else if (songTitle.equals(getString(R.string.song_rooms_2))){lyricsView.setText(R.string.lyrics_rooms_2);}
+        else if (songTitle.equals(getString(R.string.song_rooms_3))){lyricsView.setText(R.string.lyrics_rooms_3);}
+        else if (songTitle.equals(getString(R.string.song_rooms_4))){lyricsView.setText(R.string.lyrics_rooms_4);}
+        else if (songTitle.equals(getString(R.string.song_rooms_5))){lyricsView.setText(R.string.lyrics_rooms_5);}
+        else if (songTitle.equals(getString(R.string.song_rooms_6))){lyricsView.setText(R.string.lyrics_rooms_6);}
+        else if (songTitle.equals(getString(R.string.song_rooms_7))){lyricsView.setText(R.string.lyrics_rooms_7);}
+        else if (songTitle.equals(getString(R.string.song_rooms_8))){lyricsView.setText(R.string.lyrics_rooms_8);}
+        else if (songTitle.equals(getString(R.string.song_rooms_9))){lyricsView.setText(R.string.lyrics_rooms_9);}
+        else if (songTitle.equals(getString(R.string.song_rooms_10))){lyricsView.setText(R.string.lyrics_rooms_10);}
+        else if (songTitle.equals(getString(R.string.song_rooms_11))){lyricsView.setText(R.string.lyrics_rooms_11);}
     }
 
 
