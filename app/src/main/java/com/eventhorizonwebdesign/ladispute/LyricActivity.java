@@ -24,6 +24,19 @@ public class LyricActivity extends AppCompatActivity {
         else if (songTitle.equals(getString(R.string.song_vancouver_7))){lyricsView.setText(R.string.lyrics_vancouver_7);}
         else if (songTitle.equals(getString(R.string.song_vancouver_8))){lyricsView.setText(R.string.lyrics_vancouver_8);}
 
+        else if (songTitle.equals(getString(R.string.song_satbotrbvaa_1))){lyricsView.setText(R.string.lyrics_satbotrbvaa_1);}
+        else if (songTitle.equals(getString(R.string.song_satbotrbvaa_2))){lyricsView.setText(R.string.lyrics_satbotrbvaa_2);}
+        else if (songTitle.equals(getString(R.string.song_satbotrbvaa_3))){lyricsView.setText(R.string.lyrics_satbotrbvaa_3);}
+        else if (songTitle.equals(getString(R.string.song_satbotrbvaa_4))){lyricsView.setText(R.string.lyrics_satbotrbvaa_4);}
+        else if (songTitle.equals(getString(R.string.song_satbotrbvaa_5))){lyricsView.setText(R.string.lyrics_satbotrbvaa_5);}
+        else if (songTitle.equals(getString(R.string.song_satbotrbvaa_6))){lyricsView.setText(R.string.lyrics_satbotrbvaa_6);}
+        else if (songTitle.equals(getString(R.string.song_satbotrbvaa_7))){lyricsView.setText(R.string.lyrics_satbotrbvaa_7);}
+        else if (songTitle.equals(getString(R.string.song_satbotrbvaa_8))){lyricsView.setText(R.string.lyrics_satbotrbvaa_8);}
+        else if (songTitle.equals(getString(R.string.song_satbotrbvaa_9))){lyricsView.setText(R.string.lyrics_satbotrbvaa_9);}
+        else if (songTitle.equals(getString(R.string.song_satbotrbvaa_10))){lyricsView.setText(R.string.lyrics_satbotrbvaa_10);}
+        else if (songTitle.equals(getString(R.string.song_satbotrbvaa_11))){lyricsView.setText(R.string.lyrics_satbotrbvaa_11);}
+        else if (songTitle.equals(getString(R.string.song_satbotrbvaa_12))){lyricsView.setText(R.string.lyrics_satbotrbvaa_12);}
+        else if (songTitle.equals(getString(R.string.song_satbotrbvaa_13))){lyricsView.setText(R.string.lyrics_satbotrbvaa_13);}
     }
 
 
