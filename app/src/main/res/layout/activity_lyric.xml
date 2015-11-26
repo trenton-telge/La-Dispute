@@ -43,7 +43,9 @@
             android:gravity="center_horizontal"
             android:textColor="@color/white"
             android:background="@color/colorPrimary"
-            android:paddingBottom="16dp" />
+            android:paddingBottom="16dp"
+            android:textIsSelectable="true"
+            android:textColorHighlight="@color/colorAccent" />
     </ScrollView>
 
     <ImageView

@@ -205,7 +205,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         TextView extrasRoom = (TextView)findViewById(R.id.roomExtras);
-        //TODO Make ExtrasActivity
+        extrasRoom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ExtrasMainActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
     public static String getUserCountry(Context context) {
