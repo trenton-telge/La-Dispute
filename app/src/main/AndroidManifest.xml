@@ -27,22 +27,26 @@
         <activity
             android:name=".TourActivity"
             android:label="@string/title_activity_tour"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".LyricSorter"
             android:label="@string/title_activity_lyric_sorter"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".LyricActivity"
             android:label="@string/title_activity_lyric"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MusicMainActivity"
             android:label="@string/title_activity_music_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MusicAlbumActivity"
             android:label="@string/title_activity_music_album"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExtrasMainActivity"
+            android:label="@string/title_activity_extras_main"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
