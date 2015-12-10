@@ -58,12 +58,25 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        ImageView redditSocial = (ImageView)findViewById(R.id.socialSubreddit);
-        redditSocial.setOnClickListener(new View.OnClickListener() {
+        ImageView googleplusSocial = (ImageView)findViewById(R.id.socialGooglePlus);
+        googleplusSocial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_reddit)));
+                    Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_googleplus)));
+                    startActivity(myIntent);
+                } catch (ActivityNotFoundException e) {
+                    Toast.makeText(getApplicationContext(), getString(R.string.toast_nobrowser), Toast.LENGTH_LONG).show();
+                    e.printStackTrace();
+                }
+            }
+        });
+        ImageView youtubeSocial = (ImageView)findViewById(R.id.socialYoutube);
+        youtubeSocial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_youtube)));
                     startActivity(myIntent);
                 } catch (ActivityNotFoundException e) {
                     Toast.makeText(getApplicationContext(), getString(R.string.toast_nobrowser),  Toast.LENGTH_LONG).show();
@@ -77,6 +90,45 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 try {
                     Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_facebook)));
+                    startActivity(myIntent);
+                } catch (ActivityNotFoundException e) {
+                    Toast.makeText(getApplicationContext(), getString(R.string.toast_nobrowser),  Toast.LENGTH_LONG).show();
+                    e.printStackTrace();
+                }
+            }
+        });
+        ImageView redditSocial = (ImageView)findViewById(R.id.socialSubreddit);
+        redditSocial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_reddit)));
+                    startActivity(myIntent);
+                } catch (ActivityNotFoundException e) {
+                    Toast.makeText(getApplicationContext(), getString(R.string.toast_nobrowser),  Toast.LENGTH_LONG).show();
+                    e.printStackTrace();
+                }
+            }
+        });
+        ImageView twitterSocial = (ImageView)findViewById(R.id.socialTwitter);
+        twitterSocial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_twitter)));
+                    startActivity(myIntent);
+                } catch (ActivityNotFoundException e) {
+                    Toast.makeText(getApplicationContext(), getString(R.string.toast_nobrowser),  Toast.LENGTH_LONG).show();
+                    e.printStackTrace();
+                }
+            }
+        });
+        ImageView lastfmSocial = (ImageView)findViewById(R.id.socialLastFM);
+        lastfmSocial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.url_lastfm)));
                     startActivity(myIntent);
                 } catch (ActivityNotFoundException e) {
                     Toast.makeText(getApplicationContext(), getString(R.string.toast_nobrowser),  Toast.LENGTH_LONG).show();

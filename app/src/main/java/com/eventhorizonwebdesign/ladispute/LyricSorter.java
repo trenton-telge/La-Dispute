@@ -10,7 +10,6 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -148,7 +147,7 @@ public class LyricSorter extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_lyric_sorter, menu);
         return true;
     }
-    **/
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -164,7 +163,7 @@ public class LyricSorter extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
+     **/
 
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 

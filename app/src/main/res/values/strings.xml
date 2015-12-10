@@ -3,6 +3,10 @@
     <string name="desc_social_ladispute">Website</string>
     <string name="desc_social_reddit">Subreddit</string>
     <string name="desc_social_facebook">Facebook</string>
+    <string name="desc_social_lastfm">Last.fm</string>
+    <string name="desc_social_twitter">Twitter</string>
+    <string name="desc_social_googleplus">Google+</string>
+    <string name="desc_social_youtube">Youtube</string>
     <string name="desc_play_button">Play This Selection</string>
     <string name="room_tour">Tour</string>
     <string name="room_music">Music</string>
@@ -12,8 +16,12 @@
     <string name="toast_nobrowser">I couldn\'t find a web browser installed.</string>
     <string name="toast_noweb">No Internet Access.</string>
     <string name="url_officialsite">http://www.ladisputemusic.com/home/</string>
+    <string name="url_googleplus">https://plus.google.com/116650799878170476461</string>
+    <string name="url_youtube">https://www.youtube.com/channel/UCiPlac-xYG2AuSLh5JwYzzw</string>
     <string name="url_reddit">https://www.reddit.com/r/ladispute</string>
     <string name="url_facebook">https://www.facebook.com/LaDisputeMusic/</string>
+    <string name="url_twitter">https://twitter.com/ladisputeband</string>
+    <string name="url_lastfm">http://www.last.fm/music/La+Dispute</string>
     <string name="url_tourinfo">http://www.eventhorizonwebdesign.com/testing/ladispute/tour.html</string>
     <string name="url_store_europe">http://ladispute.awesomedistro.com/</string>
     <string name="url_store_asia">http://shop.resistrecords.com/collections/la-dispute</string>

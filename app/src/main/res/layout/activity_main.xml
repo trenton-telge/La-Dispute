@@ -20,7 +20,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="36dp"
+        android:layout_height="32dp"
         android:id="@+id/socialContainer"
         android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
@@ -34,7 +34,7 @@
             android:id="@+id/socialLaDispute"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/social_ladispute"
+            android:src="@drawable/ladispute_inverted"
             android:contentDescription="@string/desc_social_ladispute"
             android:clickable="true"
             android:focusable="false"
@@ -44,11 +44,50 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/socialSubreddit"
+            android:id="@+id/socialGooglePlus"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/socialLaDispute"
+            android:layout_toStartOf="@+id/socialLaDispute"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:src="@drawable/googleplus_inverted"
+            android:contentDescription="@string/desc_social_googleplus"
+            android:clickable="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/socialYoutube"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/socialLaDispute"
             android:layout_toEndOf="@+id/socialLaDispute"
-            android:src="@drawable/social_reddit"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:src="@drawable/youtube_inverted"
+            android:contentDescription="@string/desc_social_youtube"
+            android:clickable="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/socialFacebook"
+            android:src="@drawable/facebook_inverted"
+            android:contentDescription="@string/desc_social_facebook"
+            android:clickable="true"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/socialLaDispute"
+            android:layout_toStartOf="@+id/socialGooglePlus" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/socialSubreddit"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/socialLaDispute"
+            android:layout_toEndOf="@+id/socialYoutube"
+            android:src="@drawable/reddit_inverted"
             android:paddingLeft="2dp"
             android:paddingRight="2dp"
             android:contentDescription="@string/desc_social_reddit"
@@ -57,15 +96,29 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/socialFacebook"
+            android:id="@+id/socialTwitter"
             android:layout_alignParentTop="true"
-            android:layout_toLeftOf="@+id/socialLaDispute"
-            android:layout_toStartOf="@+id/socialLaDispute"
-            android:src="@drawable/social_facebook"
-            android:contentDescription="@string/desc_social_facebook"
-            android:clickable="true"
+            android:layout_toLeftOf="@+id/socialFacebook"
+            android:layout_toStartOf="@+id/socialFacebook"
             android:paddingLeft="2dp"
-            android:paddingRight="2dp" />
+            android:paddingRight="2dp"
+            android:src="@drawable/twitter_inverted"
+            android:contentDescription="@string/desc_social_twitter"
+            android:clickable="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/socialLastFM"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/socialSubreddit"
+            android:layout_toEndOf="@+id/socialSubreddit"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:src="@drawable/lastfm_inverted"
+            android:contentDescription="@string/desc_social_lastfm"
+            android:clickable="true" />
+
     </RelativeLayout>
 
     <RelativeLayout
