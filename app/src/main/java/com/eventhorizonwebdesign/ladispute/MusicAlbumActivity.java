@@ -1,13 +1,18 @@
 package com.eventhorizonwebdesign.ladispute;
 
+import android.app.SearchManager;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Point;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Display;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -73,6 +78,26 @@ public class MusicAlbumActivity extends AppCompatActivity {
 
         TextView tracklist = (TextView)findViewById(R.id.tracklisting);
         tracklist.setText(tracksText);
+
+        ImageButton playAlbumButton = (ImageButton)findViewById(R.id.playAlbumButton);
+        int width = (int)((double)viewport_width*.3);
+        Bitmap playBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.playthisselection);
+        double ratio = (double)playBitmap.getHeight()/(double)playBitmap.getWidth();
+        Bitmap resizedPlayBitmap = Bitmap.createScaledBitmap(playBitmap, width, (int)(ratio*(double)width), true);
+        playAlbumButton.setImageBitmap(resizedPlayBitmap);
+        final String album = albumTitle;
+        playAlbumButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MediaStore.INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH);
+                intent.putExtra(MediaStore.EXTRA_MEDIA_FOCUS, MediaStore.Audio.Albums.ENTRY_CONTENT_TYPE);
+                intent.putExtra(MediaStore.EXTRA_MEDIA_ALBUM, album);
+                intent.putExtra(SearchManager.QUERY, album);
+                if (intent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(intent);
+                }
+            }
+        });
     }
 
 }
