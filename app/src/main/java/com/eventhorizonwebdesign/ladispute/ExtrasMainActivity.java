@@ -18,14 +18,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class ExtrasMainActivity extends AppCompatActivity {
-    protected SharedPreferences settings = getApplicationContext().getSharedPreferences(MainActivity.PREFS_NAME, 0);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_extras_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        final SharedPreferences settings = getApplicationContext().getSharedPreferences(MainActivity.PREFS_NAME, 0);
         TextView wallpapersRoom = (TextView)findViewById(R.id.wallpapers);
         wallpapersRoom.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -17,6 +17,7 @@
     <string name="room_code">Open-Source Code</string>
     <string name="toast_nobrowser">I couldn\'t find a web browser installed.</string>
     <string name="toast_noweb">No Internet Access.</string>
+    <string name="toast_nomusic">Google Play Music could not be found.</string>
     <string name="hint_zipcode">Zipcode</string>
     <string name="switch_notifications">Notifications</string>
     <string name="link_addme">I want to code!</string>

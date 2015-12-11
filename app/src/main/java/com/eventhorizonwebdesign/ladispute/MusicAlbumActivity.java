@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MusicAlbumActivity extends AppCompatActivity {
@@ -89,12 +90,16 @@ public class MusicAlbumActivity extends AppCompatActivity {
         playAlbumButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MediaStore.INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH);
-                intent.putExtra(MediaStore.EXTRA_MEDIA_FOCUS, MediaStore.Audio.Albums.ENTRY_CONTENT_TYPE);
-                intent.putExtra(MediaStore.EXTRA_MEDIA_ALBUM, album);
-                intent.putExtra(SearchManager.QUERY, album);
-                if (intent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(intent);
+                if (MainActivity.isAppInstalled(getApplicationContext(), "com.google.android.music")) {
+                    Intent intent = new Intent(MediaStore.INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH);
+                    intent.putExtra(MediaStore.EXTRA_MEDIA_FOCUS, MediaStore.Audio.Albums.ENTRY_CONTENT_TYPE);
+                    intent.putExtra(MediaStore.EXTRA_MEDIA_ALBUM, album);
+                    intent.putExtra(SearchManager.QUERY, album);
+                    if (intent.resolveActivity(getPackageManager()) != null) {
+                        startActivity(intent);
+                    }
+                } else {
+                    Toast.makeText(getApplicationContext(), getString(R.string.toast_nomusic), Toast.LENGTH_LONG).show();
                 }
             }
         });

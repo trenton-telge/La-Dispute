@@ -4,6 +4,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Point;
@@ -24,13 +25,12 @@ public class MainActivity extends AppCompatActivity {
     protected static String lastZip = "";
     protected static Context context;
     public static final String PREFS_NAME = "LaDisputePrefs";
-    protected SharedPreferences settings = getApplicationContext().getSharedPreferences(PREFS_NAME, 0);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         context = getApplicationContext();
         setContentView(R.layout.activity_main);
-
+        SharedPreferences settings = getApplicationContext().getSharedPreferences(PREFS_NAME, 0);
         boolean manualZip = settings.getBoolean("manualZip", false);
         //Try and get the zip code from the last GPS location
         if (!manualZip){new InitZipFetcher().execute();} else {lastZip = settings.getString("zip", "");}
@@ -288,6 +288,13 @@ public class MainActivity extends AppCompatActivity {
         }
         return "";
     }
-
-
+    public static boolean isAppInstalled(Context context, String packageName) {
+        try {
+            context.getPackageManager().getApplicationInfo(packageName, 0);
+            return true;
+        }
+        catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
+    }
 }
