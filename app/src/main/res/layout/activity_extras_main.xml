@@ -115,4 +115,14 @@
         android:textStyle="bold"
         android:textColorHint="@color/colorAccent" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/link_addme"
+        android:id="@+id/addMe"
+        android:layout_below="@+id/zipcode"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:clickable="true" />
+
 </RelativeLayout>

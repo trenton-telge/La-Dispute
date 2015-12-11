@@ -3,11 +3,13 @@ package com.eventhorizonwebdesign.ladispute;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -74,6 +76,32 @@ public class ExtrasMainActivity extends AppCompatActivity {
                 // Commit the edits!
                 editor.apply();
                 return false;
+            }
+        });
+
+        TextView addMe = (TextView)findViewById(R.id.addMe);
+        addMe.setPaintFlags(addMe.getPaintFlags() |   Paint.UNDERLINE_TEXT_FLAG);
+        addMe.setOnTouchListener(new OnLinkTouchListener(){
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                switch(motionEvent.getAction()){
+                    case MotionEvent.ACTION_DOWN:
+                        ((TextView)view).setTextColor(0xFF606476);
+                        break;
+                    case MotionEvent.ACTION_CANCEL:
+                    case MotionEvent.ACTION_UP:
+                        ((TextView)view).setTextColor(0xFFFFFFFF);
+                        break;
+                }
+                return false;
+            }
+        });
+        addMe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (Intent.ACTION_VIEW , Uri.parse("mailto:" + "apps@eventhorizonwebdesign.com"));
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Repo Add Request");
+                startActivity(intent);
             }
         });
     }
