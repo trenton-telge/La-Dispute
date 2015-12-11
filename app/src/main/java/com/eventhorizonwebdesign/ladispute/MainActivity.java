@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
     protected static String lastZip = "";
     protected static Context context;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

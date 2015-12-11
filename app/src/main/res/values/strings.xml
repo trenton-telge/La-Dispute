@@ -30,6 +30,8 @@
     <string name="url_store_europe">http://ladispute.awesomedistro.com/</string>
     <string name="url_store_asia">http://shop.resistrecords.com/collections/la-dispute</string>
     <string name="url_store_america">http://hellomerch.com/collections/la-dispute</string>
+    <string name="url_wallpapers">https://goo.gl/photos/QRe8abh2iF6NRMVc9</string>
+    <string name="url_repo">https://source.developers.google.com/p/la-dispute/</string>
     <string name="blank"> </string>
     <string name="title_activity_tour">Tour Dates</string>
     <string name="title_activity_lyric_sorter">Lyrics</string>
