@@ -3,6 +3,7 @@ package com.eventhorizonwebdesign.ladispute;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Point;
@@ -22,14 +23,17 @@ public class MainActivity extends AppCompatActivity {
 
     protected static String lastZip = "";
     protected static Context context;
+    public static final String PREFS_NAME = "LaDisputePrefs";
+    protected SharedPreferences settings = getApplicationContext().getSharedPreferences(PREFS_NAME, 0);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         context = getApplicationContext();
         setContentView(R.layout.activity_main);
 
+        boolean manualZip = settings.getBoolean("manualZip", false);
         //Try and get the zip code from the last GPS location
-        new InitZipFetcher().execute();
+        if (!manualZip){new InitZipFetcher().execute();} else {lastZip = settings.getString("zip", "");}
 
         //Display footer image
         Display display = getWindowManager().getDefaultDisplay();
