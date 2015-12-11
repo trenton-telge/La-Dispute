@@ -13,8 +13,12 @@
     <string name="room_lyrics">Lyrics</string>
     <string name="room_store">Merch</string>
     <string name="room_extras">Fan Extras</string>
+    <string name="room_wallpapers">Wallpapers</string>
+    <string name="room_code">Open-Source Code</string>
     <string name="toast_nobrowser">I couldn\'t find a web browser installed.</string>
     <string name="toast_noweb">No Internet Access.</string>
+    <string name="hint_zipcode">Zipcode</string>
+    <string name="switch_notifications">Notifications</string>
     <string name="url_officialsite">http://www.ladisputemusic.com/home/</string>
     <string name="url_googleplus">https://plus.google.com/116650799878170476461</string>
     <string name="url_youtube">https://www.youtube.com/channel/UCiPlac-xYG2AuSLh5JwYzzw</string>
