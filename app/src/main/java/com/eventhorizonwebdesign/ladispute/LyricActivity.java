@@ -1,9 +1,12 @@
 package com.eventhorizonwebdesign.ladispute;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
+
+import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 public class LyricActivity extends AppCompatActivity {
     @Override
@@ -12,6 +15,11 @@ public class LyricActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lyric);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        // create our manager instance after the content view is set
+        SystemBarTintManager tintManager = new SystemBarTintManager(this);
+        // enable status bar tint
+        tintManager.setStatusBarTintEnabled(true);
+        tintManager.setTintColor(Color.parseColor("#FF606476"));
         String songTitle = getIntent().getExtras().getString("SONG_TITLE");
         if (songTitle == null){songTitle = "";}
         TextView lyricsView = (TextView) findViewById(R.id.lyricPane);

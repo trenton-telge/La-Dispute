@@ -4,6 +4,7 @@ import android.app.SearchManager;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -15,6 +16,8 @@ import android.view.ViewTreeObserver;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.readystatesoftware.systembartint.SystemBarTintManager;
+
 public class MusicMainActivity extends AppCompatActivity {
 
     @Override
@@ -23,6 +26,12 @@ public class MusicMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_music_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // create our manager instance after the content view is set
+        SystemBarTintManager tintManager = new SystemBarTintManager(this);
+        // enable status bar tint
+        tintManager.setStatusBarTintEnabled(true);
+        tintManager.setTintColor(Color.parseColor("#FF606476"));
 
         final ImageButton vancouverAlbum = (ImageButton)findViewById(R.id.vancouverAlbum);
         ViewTreeObserver observer = vancouverAlbum.getViewTreeObserver();

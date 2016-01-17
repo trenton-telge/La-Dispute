@@ -3,6 +3,7 @@ package com.eventhorizonwebdesign.ladispute;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -15,6 +16,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+import com.readystatesoftware.*;
+import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 public class TourActivity extends AppCompatActivity {
     @Override
@@ -23,6 +26,11 @@ public class TourActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tour);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        // create our manager instance after the content view is set
+        SystemBarTintManager tintManager = new SystemBarTintManager(this);
+        // enable status bar tint
+        tintManager.setStatusBarTintEnabled(true);
+        tintManager.setTintColor(Color.parseColor("#FF606476"));
         final WebView webview=(WebView)findViewById(R.id.tourView);
         final ProgressBar webProgress = (ProgressBar) findViewById(R.id.webProgress);
         webview.clearCache(true);
