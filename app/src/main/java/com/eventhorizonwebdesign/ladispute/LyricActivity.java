@@ -72,6 +72,25 @@ public class LyricActivity extends AppCompatActivity {
         else if (songTitle.equals(getString(R.string.song_rooms_9))){lyricsView.setText(R.string.lyrics_rooms_9);}
         else if (songTitle.equals(getString(R.string.song_rooms_10))){lyricsView.setText(R.string.lyrics_rooms_10);}
         else if (songTitle.equals(getString(R.string.song_rooms_11))){lyricsView.setText(R.string.lyrics_rooms_11);}
+
+        else if (songTitle.equals(getString(R.string.song_untitled_1))){lyricsView.setText(R.string.lyrics_untitled_1);}
+        else if (songTitle.equals(getString(R.string.song_untitled_2))){lyricsView.setText(R.string.lyrics_untitled_2);}
+
+        else if (songTitle.equals(getString(R.string.song_herehearptone_1))){lyricsView.setText(R.string.lyrics_herehearptone_1);}
+        else if (songTitle.equals(getString(R.string.song_herehearptone_2))){lyricsView.setText(R.string.lyrics_herehearptone_2);}
+        else if (songTitle.equals(getString(R.string.song_herehearptone_3))){lyricsView.setText(R.string.lyrics_herehearptone_3);}
+        else if (songTitle.equals(getString(R.string.song_herehearptone_4))){lyricsView.setText(R.string.lyrics_herehearptone_4);}
+
+        else if (songTitle.equals(getString(R.string.song_herehearpttwo_1))){lyricsView.setText(R.string.lyrics_herehearpttwo_1);}
+        else if (songTitle.equals(getString(R.string.song_herehearpttwo_2))){lyricsView.setText(R.string.lyrics_herehearpttwo_2);}
+        else if (songTitle.equals(getString(R.string.song_herehearpttwo_3))){lyricsView.setText(R.string.lyrics_herehearpttwo_3);}
+        else if (songTitle.equals(getString(R.string.song_herehearpttwo_4))){lyricsView.setText(R.string.lyrics_herehearpttwo_4);}
+
+        else if (songTitle.equals(getString(R.string.song_herehearptthree_1))){lyricsView.setText(R.string.lyrics_herehearptthree_1);}
+        else if (songTitle.equals(getString(R.string.song_herehearptthree_2))){lyricsView.setText(R.string.lyrics_herehearptthree_2);}
+        else if (songTitle.equals(getString(R.string.song_herehearptthree_3))){lyricsView.setText(R.string.lyrics_herehearptthree_3);}
+        else if (songTitle.equals(getString(R.string.song_herehearptthree_4))){lyricsView.setText(R.string.lyrics_herehearptthree_4);}
+
     }
 
 

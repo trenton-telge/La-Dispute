@@ -135,6 +135,70 @@ public class LyricSorter extends AppCompatActivity {
         gru4.setItems(list2);
         list.add(gru4);
 
+        list2 = new ArrayList<>();
+        ExpandListGroup gru5 = new ExpandListGroup();
+        gru5.setName(c.getString(R.string.album_untitled));
+        tempArray = c.getResources().getStringArray(R.array.album_array_untitled);
+        count = 0;
+        max = tempArray.length;
+        do {
+            ExpandListChild ch = new ExpandListChild();
+            ch.setName(tempArray[count]);
+            ch.setTag(null);
+            list2.add(ch);
+            count++;
+        } while(count < max);
+        gru5.setItems(list2);
+        list.add(gru5);
+
+        list2 = new ArrayList<>();
+        ExpandListGroup gru6 = new ExpandListGroup();
+        gru6.setName(c.getString(R.string.album_herehearptone));
+        tempArray = c.getResources().getStringArray(R.array.album_array_herehearptone);
+        count = 0;
+        max = tempArray.length;
+        do {
+            ExpandListChild ch = new ExpandListChild();
+            ch.setName(tempArray[count]);
+            ch.setTag(null);
+            list2.add(ch);
+            count++;
+        } while(count < max);
+        gru6.setItems(list2);
+        list.add(gru6);
+
+        list2 = new ArrayList<>();
+        ExpandListGroup gru7 = new ExpandListGroup();
+        gru7.setName(c.getString(R.string.album_herehearpttwo));
+        tempArray = c.getResources().getStringArray(R.array.album_array_herehearpttwo);
+        count = 0;
+        max = tempArray.length;
+        do {
+            ExpandListChild ch = new ExpandListChild();
+            ch.setName(tempArray[count]);
+            ch.setTag(null);
+            list2.add(ch);
+            count++;
+        } while(count < max);
+        gru7.setItems(list2);
+        list.add(gru7);
+
+        list2 = new ArrayList<>();
+        ExpandListGroup gru8 = new ExpandListGroup();
+        gru8.setName(c.getString(R.string.album_herehearptthree));
+        tempArray = c.getResources().getStringArray(R.array.album_array_herehearptthree);
+        count = 0;
+        max = tempArray.length;
+        do {
+            ExpandListChild ch = new ExpandListChild();
+            ch.setName(tempArray[count]);
+            ch.setTag(null);
+            list2.add(ch);
+            count++;
+        } while(count < max);
+        gru8.setItems(list2);
+        list.add(gru8);
+
         return list;
     }
 
@@ -237,6 +301,14 @@ public class LyricSorter extends AppCompatActivity {
                     tempArray2 = this.getContext().getResources().getStringArray(R.array.album_array_wildlife);
                     tempArray1 = arrayConcat(tempArray1, tempArray2);
                     tempArray2 = this.getContext().getResources().getStringArray(R.array.album_array_rooms);
+                    tempArray1 = arrayConcat(tempArray1, tempArray2);
+                    tempArray2 = this.getContext().getResources().getStringArray(R.array.album_array_untitled);
+                    tempArray1 = arrayConcat(tempArray1, tempArray2);
+                    tempArray2 = this.getContext().getResources().getStringArray(R.array.album_array_herehearptone);
+                    tempArray1 = arrayConcat(tempArray1, tempArray2);
+                    tempArray2 = this.getContext().getResources().getStringArray(R.array.album_array_herehearpttwo);
+                    tempArray1 = arrayConcat(tempArray1, tempArray2);
+                    tempArray2 = this.getContext().getResources().getStringArray(R.array.album_array_herehearptthree);
                     tempArray1 = arrayConcat(tempArray1, tempArray2);
                     List<String> titles = Arrays.asList(tempArray1);
                     Collections.sort(titles, String.CASE_INSENSITIVE_ORDER);
