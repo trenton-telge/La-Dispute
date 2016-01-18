@@ -38,7 +38,7 @@ public class MusicMainActivity extends AppCompatActivity {
         observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
             public void onGlobalLayout() {
-                int albumdim = vancouverAlbum.getWidth()-8;
+                int albumdim = vancouverAlbum.getWidth() - 8;
                 Bitmap albumBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.vancouver);
                 Bitmap resizedAlbumBitmap = Bitmap.createScaledBitmap(albumBitmap, albumdim, albumdim, true);
                 vancouverAlbum.setImageBitmap(resizedAlbumBitmap);
@@ -106,6 +106,82 @@ public class MusicMainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(), MusicAlbumActivity.class);
                 intent.putExtra("EXTRA_ALBUM_NAME", "Rooms Of The House");
+                startActivity(intent);
+            }
+        });
+        final ImageButton untitledAlbum = (ImageButton)findViewById(R.id.untitledAlbum);
+        observer = untitledAlbum.getViewTreeObserver();
+        observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                int albumdim = untitledAlbum.getWidth()-8;
+                Bitmap albumBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.untitled);
+                Bitmap resizedAlbumBitmap = Bitmap.createScaledBitmap(albumBitmap, albumdim, albumdim, true);
+                untitledAlbum.setImageBitmap(resizedAlbumBitmap);
+            }
+        });
+        untitledAlbum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), MusicAlbumActivity.class);
+                intent.putExtra("EXTRA_ALBUM_NAME", "Untitled 7\"");
+                startActivity(intent);
+            }
+        });
+        final ImageButton herehearptoneAlbum = (ImageButton)findViewById(R.id.herehearptoneAlbum);
+        observer = herehearptoneAlbum.getViewTreeObserver();
+        observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                int albumdim = herehearptoneAlbum.getWidth()-8;
+                Bitmap albumBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.hh1);
+                Bitmap resizedAlbumBitmap = Bitmap.createScaledBitmap(albumBitmap, albumdim, albumdim, true);
+                herehearptoneAlbum.setImageBitmap(resizedAlbumBitmap);
+            }
+        });
+        herehearptoneAlbum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), MusicAlbumActivity.class);
+                intent.putExtra("EXTRA_ALBUM_NAME", "Here, Hear I");
+                startActivity(intent);
+            }
+        });
+        final ImageButton herehearpttwoAlbum = (ImageButton)findViewById(R.id.herehearpttwoAlbum);
+        observer = herehearpttwoAlbum.getViewTreeObserver();
+        observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                int albumdim = herehearpttwoAlbum.getWidth()-8;
+                Bitmap albumBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.hh2);
+                Bitmap resizedAlbumBitmap = Bitmap.createScaledBitmap(albumBitmap, albumdim, albumdim, true);
+                herehearpttwoAlbum.setImageBitmap(resizedAlbumBitmap);
+            }
+        });
+        herehearpttwoAlbum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), MusicAlbumActivity.class);
+                intent.putExtra("EXTRA_ALBUM_NAME", "Here, Hear II");
+                startActivity(intent);
+            }
+        });
+        final ImageButton herehearptthreeAlbum = (ImageButton)findViewById(R.id.herehearptthreeAlbum);
+        observer = herehearptthreeAlbum.getViewTreeObserver();
+        observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                int albumdim = herehearptthreeAlbum.getWidth()-8;
+                Bitmap albumBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.hh3);
+                Bitmap resizedAlbumBitmap = Bitmap.createScaledBitmap(albumBitmap, albumdim, albumdim, true);
+                herehearptthreeAlbum.setImageBitmap(resizedAlbumBitmap);
+            }
+        });
+        herehearptthreeAlbum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), MusicAlbumActivity.class);
+                intent.putExtra("EXTRA_ALBUM_NAME", "Here, Hear III");
                 startActivity(intent);
             }
         });

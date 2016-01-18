@@ -65,6 +65,26 @@ public class MusicAlbumActivity extends AppCompatActivity {
                         tracksText = getString(R.string.tracklisting_rooms);
                         albumTitle = getString(R.string.album_rooms);
                         break;
+                    case "Untitled 7\"":
+                        coverBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.untitled);
+                        tracksText = getString(R.string.tracklisting_untitled);
+                        albumTitle = getString(R.string.album_untitled);
+                        break;
+                    case "Here, Hear I":
+                        coverBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.hh1);
+                        tracksText = getString(R.string.tracklisting_herehearptone);
+                        albumTitle = getString(R.string.album_herehearptone);
+                        break;
+                    case "Here, Hear II":
+                        coverBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.hh2);
+                        tracksText = getString(R.string.tracklisting_herehearpttwo);
+                        albumTitle = getString(R.string.album_herehearpttwo);
+                        break;
+                    case "Here, Hear III":
+                        coverBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.hh3);
+                        tracksText = getString(R.string.tracklisting_herehearptthree);
+                        albumTitle = getString(R.string.album_herehearptthree);
+                        break;
                     default:
                         return;
                 }

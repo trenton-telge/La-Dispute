@@ -19,6 +19,157 @@
         android:layout_alignParentStart="true"
         android:id="@+id/toolbar" />
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentScroller"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/toolbar" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rooms_of_the_house_bg"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/rooms"
+                android:padding="4dp"
+                android:minHeight="20dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vancouverAlbum"
+                    android:background="@drawable/rooms_of_the_house_bg"
+                    android:padding="4dp"
+                    android:contentDescription="@string/album_vancouver"
+                    android:layout_toLeftOf="@+id/textView"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/satbotrbvaaAlbum"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="@string/album_satbotrbvaa"
+                    android:background="@drawable/rooms_of_the_house_bg"
+                    android:padding="4dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/textView"
+                    android:layout_toEndOf="@+id/textView" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wildlifeAlbum"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:padding="4dp"
+                    android:background="@drawable/rooms_of_the_house_bg"
+                    android:contentDescription="@string/album_wildlife"
+                    android:layout_below="@+id/vancouverAlbum"
+                    android:layout_toLeftOf="@+id/satbotrbvaaAlbum"
+                    android:layout_toStartOf="@+id/satbotrbvaaAlbum" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/roomsAlbum"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:background="@drawable/rooms_of_the_house_bg"
+                    android:contentDescription="@string/album_rooms"
+                    android:layout_alignTop="@+id/wildlifeAlbum"
+                    android:layout_alignLeft="@+id/textView"
+                    android:layout_alignStart="@+id/textView" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignBottom="@+id/wildlifeAlbum" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/untitledAlbum"
+                    android:layout_below="@+id/wildlifeAlbum"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignRight="@+id/wildlifeAlbum"
+                    android:layout_alignEnd="@+id/wildlifeAlbum"
+                    android:background="@drawable/rooms_of_the_house_bg"
+                    android:contentDescription="@string/album_untitled"
+                    android:padding="4dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/herehearptoneAlbum"
+                    android:layout_below="@+id/roomsAlbum"
+                    android:layout_alignRight="@+id/roomsAlbum"
+                    android:layout_alignEnd="@+id/roomsAlbum"
+                    android:layout_alignLeft="@+id/roomsAlbum"
+                    android:layout_alignStart="@+id/roomsAlbum"
+                    android:background="@drawable/rooms_of_the_house_bg"
+                    android:contentDescription="@string/album_herehearptone"
+                    android:padding="4dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/herehearpttwoAlbum"
+                    android:layout_below="@+id/untitledAlbum"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/herehearptoneAlbum"
+                    android:layout_toStartOf="@+id/herehearptoneAlbum"
+                    android:background="@drawable/rooms_of_the_house_bg"
+                    android:contentDescription="@string/album_herehearpttwo"
+                    android:padding="4dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/herehearptthreeAlbum"
+                    android:layout_below="@+id/untitledAlbum"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/herehearpttwoAlbum"
+                    android:layout_toEndOf="@+id/herehearpttwoAlbum"
+                    android:background="@drawable/rooms_of_the_house_bg"
+                    android:padding="4dp"
+                    android:contentDescription="@string/album_herehearptthree" />
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/playButton"
+                android:layout_centerHorizontal="true"
+                android:background="#00000000"
+                android:contentDescription="@string/desc_play_button"
+                android:clickable="true"
+                android:layout_below="@+id/rooms" />
+        </RelativeLayout>
+    </ScrollView>
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="8dp"
@@ -31,90 +182,5 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:contentDescription="@string/blank" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/dropShadow"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="@drawable/rooms_of_the_house_bg"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="10dp"
-        android:id="@+id/rooms"
-        android:padding="4dp"
-        android:minHeight="20dp">
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/vancouverAlbum"
-            android:background="@drawable/rooms_of_the_house_bg"
-            android:padding="4dp"
-            android:contentDescription="@string/album_vancouver"
-            android:layout_toLeftOf="@+id/textView"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/satbotrbvaaAlbum"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:contentDescription="@string/album_satbotrbvaa"
-            android:background="@drawable/rooms_of_the_house_bg"
-            android:padding="4dp"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/textView"
-            android:layout_toEndOf="@+id/textView" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/wildlifeAlbum"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:padding="4dp"
-            android:background="@drawable/rooms_of_the_house_bg"
-            android:contentDescription="@string/album_wildlife"
-            android:layout_below="@+id/vancouverAlbum"
-            android:layout_toLeftOf="@+id/satbotrbvaaAlbum"
-            android:layout_toStartOf="@+id/satbotrbvaaAlbum" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/roomsAlbum"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:padding="4dp"
-            android:background="@drawable/rooms_of_the_house_bg"
-            android:contentDescription="@string/album_rooms"
-            android:layout_alignTop="@+id/wildlifeAlbum"
-            android:layout_alignLeft="@+id/textView"
-            android:layout_alignStart="@+id/textView" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_alignBottom="@+id/wildlifeAlbum" />
-    </RelativeLayout>
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/playButton"
-        android:layout_below="@+id/rooms"
-        android:layout_centerHorizontal="true"
-        android:background="#00000000"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/desc_play_button"
-        android:clickable="true" />
 
 </RelativeLayout>

@@ -5,6 +5,10 @@
     <string name="album_satbotrbvaa_full">Somewhere At The Bottom Of The River Between Vega And Altair</string>
     <string name="album_wildlife">Wildlife</string>
     <string name="album_rooms">Rooms Of The House</string>
+    <string name="album_untitled">Untitled 7\"</string>
+    <string name="album_herehearptone">Here, Hear I</string>
+    <string name="album_herehearpttwo">Here, Hear II</string>
+    <string name="album_herehearptthree">Here, Hear III</string>
 
     <string name="song_vancouver_1">Future Wars</string>
     <string name="song_vancouver_2">A Word Of Welcome And Of Warning</string>
@@ -120,6 +124,58 @@
     </string-array>
     <string name="tracklisting_rooms">
         1. Hudsonville Mi 1956\n2. First Reactions After Falling Through The Ice\n3. Woman (In Mirror)\n4. Scenes From Highways 1981/2009\n5. For Mayor In Splitsville\n6. 35\n7. Stay Happy There\n8. The Child We Lost 1963\n9. Woman (Reading)\n10. Extraordinary Dinner Party\n11. Objects In Space
+    </string>
+
+    <string name="song_untitled_1">Only Everything Below</string>
+    <string name="song_untitled_2">Shall Never Lose Its Power</string>
+    <string-array name="album_array_untitled">
+        <item>@string/song_untitled_1</item>
+        <item>@string/song_untitled_2</item>
+    </string-array>
+    <string name="tracklisting_untitled">
+        1. Only Everything Below\n2. Shall Never Lose Its Power
+    </string>
+
+    <string name="song_herehearptone_1">One</string>
+    <string name="song_herehearptone_2">Two</string>
+    <string name="song_herehearptone_3">Three</string>
+    <string name="song_herehearptone_4">Four</string>
+    <string-array name="album_array_herehearptone">
+        <item>@string/song_herehearptone_1</item>
+        <item>@string/song_herehearptone_2</item>
+        <item>@string/song_herehearptone_3</item>
+        <item>@string/song_herehearptone_4</item>
+    </string-array>
+    <string name="tracklisting_herehearptone">
+        1. One\n2. Two\n3. Three\n4. Four
+    </string>
+
+    <string name="song_herehearpttwo_1">Five</string>
+    <string name="song_herehearpttwo_2">Six</string>
+    <string name="song_herehearpttwo_3">Seven</string>
+    <string name="song_herehearpttwo_4">Eight</string>
+    <string-array name="album_array_herehearpttwo">
+        <item>@string/song_herehearpttwo_1</item>
+        <item>@string/song_herehearpttwo_2</item>
+        <item>@string/song_herehearpttwo_3</item>
+        <item>@string/song_herehearpttwo_4</item>
+    </string-array>
+    <string name="tracklisting_herehearpttwo">
+        1. Five\n2. Six\n3. Seven\n4. Eight
+    </string>
+
+    <string name="song_herehearptthree_1">Nine</string>
+    <string name="song_herehearptthree_2">Ten</string>
+    <string name="song_herehearptthree_3">Eleven</string>
+    <string name="song_herehearptthree_4">Twelve</string>
+    <string-array name="album_array_herehearptthree">
+        <item>@string/song_herehearptthree_1</item>
+        <item>@string/song_herehearptthree_2</item>
+        <item>@string/song_herehearptthree_3</item>
+        <item>@string/song_herehearptthree_4</item>
+    </string-array>
+    <string name="tracklisting_herehearptthree">
+        1. Nine\n2. Ten\n3. Eleven\n4. Twelve
     </string>
 
 </resources>
